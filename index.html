@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pug to HTML</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div id="app">
+  <div class="container">
+    <div class="copy">
+            <h1>Pug to HTML</h1>
+<h2>Compiling & rendering Pug templates at runtime with Vue.js</h2>
+      <p>While not recommended to use on a production website, the standalone version of Pug can be used to compile any string template at runtime. Combined with <a href="https://vuejs.org/">Vue.js</a> you can easily build dynamic live previews that don’t
+        require a server or NodeJS runtime. Only downside: filesize of the <a href="https://pugjs.org/js/pug.js">Pug.js</a> (500kb). But if you are building code playgrounds, style guides or desktop apps, this is no big deal, right?</p>
+    </div>
+  </div>
+
+  <div class="container mtop">
+    <div class="row">
+      <div class="one-half column">
+        <label>
+  Pug
+  </label>
+
+        <textarea name="" id="" v-model="jadeTemplate"></textarea>
+        <label>Name</label>
+        <input type="text" v-model="name" />
+
+      </div>
+      <div class="one-half column">
+        <label>HTML</label>
+        <div class="render" v-html="renderedTemplate"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src='https://pugjs.org/js/pug.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/229301/jade.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.4/vue.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
